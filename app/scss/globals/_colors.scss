@@ -1,0 +1,4 @@
+:root { // root takes #1 priority in rules so it overrides all other styling
+  --background-color: hsl(0, 0%, 11%);
+  --text-color: hsl(0,0%,100%);
+}

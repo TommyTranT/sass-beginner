@@ -1,0 +1,4 @@
+// Loading our partial files into the index.scss so that the main style.scss can find them
+@forward 'boilerplate';
+@forward 'typography';
+@forward 'colors';

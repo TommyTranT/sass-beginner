@@ -1,0 +1,20 @@
+@use '../util/' as u; // using partials from folder 'util'
+
+html {
+  box-sizing: border-box; // ensures that any added padding or margins will be included in the final width
+  font-size: 100%; // ensures font is 100% of the users browser. Defaults to 16px
+}
+
+*, // selects all elements
+*::before, 
+*::after {
+  box-sizing: inherit; // border-box from html
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: u.$font; // using $font from util>index.scss
+  background-color: var(--background-color);
+  color: var(--text-color);
+}

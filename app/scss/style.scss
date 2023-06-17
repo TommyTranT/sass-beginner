@@ -1,0 +1,3 @@
+// Telling our style sheet to look in the folders for the index.scss that will import the partial files
+@forward 'globals';
+@forward 'layout';

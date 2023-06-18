@@ -4,6 +4,10 @@
   grid-template-rows: auto auto; // row is as big as the content contained
   gap: 40px;
 
+  @media (min-width: 900px) { 
+    grid-template-columns: 2fr 1fr; // first column is 2 times the size of the second column
+  }
+
   &__main, &__sidebar {
     padding: 40px;
   }

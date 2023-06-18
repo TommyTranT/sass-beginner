@@ -3,9 +3,13 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto auto; // row is as big as the content contained
   gap: 40px;
+  max-width: 1000px; // prevents grid from over spreading on bigger screens
+  margin-left: auto; // centers grid
+  margin-right: auto;
 
   @media (min-width: 900px) { 
     grid-template-columns: 2fr 1fr; // first column is 2 times the size of the second column
+    grid-template-rows: auto; 
   }
 
   &__main, &__sidebar {
